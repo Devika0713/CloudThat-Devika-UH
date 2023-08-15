@@ -1,0 +1,56 @@
+/* Add the hover animation */
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+h1{
+    letter-spacing: 0.50rem;
+}
+
+/* Apply the hover animation to the title on hover */
+.animate-bounce:hover {
+    /* animation: 5s ease infinite; */
+    animation: bounce 5s ease infinite ;
+}
+
+/* Apply a custom font to the title */
+.custom-font {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+#nameContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+    /* background-color: hsla(29, 96%, 52%, 1);
+
+    background: linear-gradient(135deg, hsla(29, 96%, 52%, 1) 0%, hsla(20, 100%, 99%, 1) 48%, hsla(109, 92%, 29%, 1) 100%);
+    
+    background: -moz-linear-gradient(135deg, hsla(29, 96%, 52%, 1) 0%, hsla(20, 100%, 99%, 1) 48%, hsla(109, 92%, 29%, 1) 100%);
+    
+    background: -webkit-linear-gradient(135deg, hsla(29, 96%, 52%, 1) 0%, hsla(20, 100%, 99%, 1) 48%, hsla(109, 92%, 29%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FA8111", endColorstr="#FFFDFC", GradientType=1 ); */
+    background-image: url(gradient.png);
+}
+
+.name {
+    position: absolute;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+}
